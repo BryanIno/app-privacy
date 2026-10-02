@@ -7,74 +7,101 @@
     <meta name="description" content="Política de privacidad de Linterna FX para Android.">
     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body>
-    <main class="page">
-      <article aria-labelledby="policy-title">
-        <header class="policy-header">
-          <p class="app-name">Linterna FX · Android</p>
-          <h1 id="policy-title">Política de Privacidad</h1>
-          <p class="updated">Última actualización: <time datetime="2026-10-01">1 de octubre de 2026</time></p>
-          <dl class="app-details">
+  <body class="policy-site">
+    <main class="policy-page">
+      <article aria-labelledby="titulo-politica">
+        <header>
+          <h1 id="titulo-politica">Política de Privacidad de Linterna FX</h1>
+          <p>Última actualización: <time datetime="2026-10-01">1 de octubre de 2026</time></p>
+        </header>
+        <section aria-labelledby="identificacion">
+          <h2 id="identificacion">1. Identificación de la aplicación</h2>
+          <dl>
             <div>
-              <dt>Aplicación</dt>
+              <dt>Nombre</dt>
               <dd>Linterna FX</dd>
-            </div>
-            <div>
-              <dt>Versión</dt>
-              <dd>1.0.0</dd>
             </div>
             <div>
               <dt>Package Android</dt>
               <dd><code>com.bryanino.linternafx</code></dd>
             </div>
+            <div>
+              <dt>Desarrollador</dt>
+              <dd>Bryan Inostroza</dd>
+            </div>
+            <div>
+              <dt>Versión inicial</dt>
+              <dd>1.0.0</dd>
+            </div>
           </dl>
-        </header>
-
-        <section aria-labelledby="operation-title">
-          <h2 id="operation-title">Uso de la aplicación</h2>
-          <p>Linterna FX no requiere crear una cuenta ni iniciar sesión. Sus funciones principales de iluminación funcionan sin conexión a Internet y no requieren un servidor propio (backend).</p>
-          <p>La aplicación no mantiene una base de datos propia de perfiles de usuarios. Los servicios de publicidad y consentimiento de Google pueden necesitar conexión a Internet.</p>
+          <p>Esta política describe el tratamiento de información en Linterna FX para Android, distinguiendo las funciones propias de la aplicación de los servicios de publicidad y consentimiento proporcionados por Google.</p>
         </section>
-
-        <section aria-labelledby="permissions-title">
-          <h2 id="permissions-title">Permisos y funciones del dispositivo</h2>
+        <section aria-labelledby="funcionamiento">
+          <h2 id="funcionamiento">2. Funcionamiento general</h2>
+          <p>Linterna FX es una aplicación de utilidad que ofrece iluminación mediante el LED físico del dispositivo y la pantalla, así como efectos de luz. Según la función seleccionada y la compatibilidad del dispositivo, incluye SOS, Beacon, Heartbeat, Strobe, Pulse, Double Flash y Morse, además de accesos desde Quick Settings y activación mediante Double Shake.</p>
+        </section>
+        <section aria-labelledby="cuenta">
+          <h2 id="cuenta">3. Cuenta de usuario</h2>
+          <p>Linterna FX no requiere registro ni inicio de sesión. No existe una cuenta de usuario propia de Linterna FX.</p>
+        </section>
+        <section aria-labelledby="conexion">
+          <h2 id="conexion">4. Backend y conexión a Internet</h2>
+          <p>Las funciones principales de iluminación no requieren un backend propio y pueden funcionar sin conexión a Internet.</p>
+          <p>La aplicación puede utilizar Internet para cargar anuncios mediante Google AdMob y para gestionar el consentimiento y las preferencias relacionadas con publicidad mediante Google UMP. Por ello, el funcionamiento sin conexión de la iluminación no implica que todos los servicios de la aplicación funcionen sin Internet.</p>
+        </section>
+        <section aria-labelledby="datos-propios">
+          <h2 id="datos-propios">5. Datos recopilados directamente por Linterna FX</h2>
+          <p>En su implementación actual, Linterna FX no cuenta con un sistema propio destinado a recopilar nombres, correos electrónicos, números telefónicos, ubicación precisa, fotografías, vídeos, contactos ni archivos personales.</p>
+          <p>Esta descripción se refiere a las funciones propias de Linterna FX. Los servicios de Google integrados en la aplicación pueden tratar información para publicidad y consentimiento, como se explica a continuación.</p>
+        </section>
+        <section aria-labelledby="permisos">
+          <h2 id="permisos">6. Permisos y hardware</h2>
+          <p>En su versión actual, la aplicación no solicita el permiso CAMERA, no utiliza el micrófono, no solicita ubicación ni acceso general al almacenamiento personal del dispositivo.</p>
+          <p>La linterna física utiliza las funciones de control de la linterna (torch) de Android. La aplicación puede utilizar vibración o respuesta háptica para confirmar acciones del usuario.</p>
+        </section>
+        <section aria-labelledby="admob">
+          <h2 id="admob">7. Publicidad mediante Google AdMob</h2>
+          <p>Linterna FX utiliza Google AdMob para mostrar banners publicitarios. Google, como proveedor publicitario, puede recopilar y procesar información mediante Google Mobile Ads SDK conforme a sus políticas, la versión del SDK y la configuración aplicable. Esta información puede incluir:</p>
           <ul>
-            <li>No solicita permiso de cámara.</li>
-            <li>No utiliza el micrófono.</li>
-            <li>No solicita permisos de ubicación.</li>
-            <li>No solicita acceso general al almacenamiento personal, como fotos, documentos u otros archivos.</li>
-            <li>Utiliza vibración y respuesta háptica (haptics) cuando corresponde a las funciones de la aplicación.</li>
+            <li>Dirección IP, que puede utilizarse para estimar una ubicación general.</li>
+            <li>Identificadores del dispositivo o de publicidad, cuando correspondan.</li>
+            <li>Interacciones con los anuncios y con el producto o la aplicación.</li>
+            <li>Información de diagnóstico y rendimiento.</li>
+            <li>Otra información necesaria para entregar y medir anuncios, limitar el fraude y personalizar publicidad según el consentimiento y la configuración.</li>
           </ul>
+          <p>El tratamiento de estos datos por Google es distinto de la recopilación directa por las funciones propias de Linterna FX. No implica que Bryan Inostroza reciba directamente toda esa información identificable.</p>
+          <p>Puedes consultar la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a> y la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">información oficial sobre los datos tratados por Google Mobile Ads SDK</a>.</p>
         </section>
-
-        <section aria-labelledby="ads-title">
-          <h2 id="ads-title">Publicidad y datos procesados por Google</h2>
-          <p>Linterna FX utiliza Google AdMob para mostrar banners publicitarios. El SDK de Google Mobile Ads puede procesar información como:</p>
-          <ul>
-            <li>Dirección IP.</li>
-            <li>Identificadores del dispositivo o publicitarios.</li>
-            <li>Interacciones con anuncios.</li>
-            <li>Datos de diagnóstico, como informes de errores y rendimiento.</li>
-          </ul>
-          <p>Google procesa esta información conforme a sus políticas para prestar servicios publicitarios, medir su rendimiento y prevenir el fraude. Los anuncios no personalizados también pueden implicar el procesamiento de ciertos datos.</p>
-          <p>Para conocer cómo Google trata la información, consulta la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+        <section aria-labelledby="consentimiento">
+          <h2 id="consentimiento">8. Consentimiento y opciones de privacidad</h2>
+          <p>La aplicación utiliza Google User Messaging Platform (UMP) para solicitar consentimiento cuando corresponda y gestionar opciones de privacidad relacionadas con la publicidad. Cuando la normativa lo requiera, permite modificar determinadas preferencias mediante las opciones de privacidad disponibles en la aplicación.</p>
+          <p>Estas medidas pueden aplicarse especialmente en el Espacio Económico Europeo, el Reino Unido y Suiza, sin excluir otras jurisdicciones donde existan requisitos aplicables. La presentación de mensajes y opciones depende de la región, la configuración y los requisitos correspondientes.</p>
+          <p>Más información en la <a href="https://developers.google.com/admob/android/privacy">documentación oficial de Google UMP</a>.</p>
         </section>
-
-        <section aria-labelledby="consent-title">
-          <h2 id="consent-title">Consentimiento y opciones de privacidad</h2>
-          <p>La aplicación utiliza Google UMP (User Messaging Platform) para gestionar el consentimiento y las opciones de privacidad relacionadas con la publicidad, según corresponda.</p>
-          <p>Dependiendo de tu región y de tu consentimiento, Google puede mostrar anuncios personalizados o no personalizados. Cuando corresponda, puedes revisar y modificar tus decisiones mediante las opciones de privacidad disponibles en la aplicación.</p>
+        <section aria-labelledby="tipo-publicidad">
+          <h2 id="tipo-publicidad">9. Publicidad personalizada y no personalizada</h2>
+          <p>Dependiendo de la región, el consentimiento y la configuración aplicable, Google puede servir anuncios personalizados o no personalizados conforme a sus políticas y a la legislación correspondiente. No se garantiza un tipo concreto de anuncio.</p>
+          <p>Los anuncios no personalizados también pueden implicar tratamiento de información para su entrega, medición y prevención del fraude.</p>
         </section>
-
-        <section aria-labelledby="changes-title">
-          <h2 id="changes-title">Actualizaciones de esta política</h2>
-          <p>Esta política puede actualizarse para reflejar cambios en la aplicación o en los servicios que utiliza. La versión vigente se publicará en esta página y se actualizará la fecha indicada al inicio.</p>
+        <section aria-labelledby="retencion">
+          <h2 id="retencion">10. Retención y tratamiento por terceros</h2>
+          <p>Linterna FX no tiene actualmente una base de datos propia de perfiles de usuario. La retención y el tratamiento de información que realicen Google y AdMob están sujetos a las políticas de esos proveedores y a los requisitos aplicables. Puedes consultar sus políticas para conocer los criterios de conservación y las opciones de gestión de datos.</p>
         </section>
-
-        <section class="contact" aria-labelledby="contact-title">
-          <h2 id="contact-title">Contacto</h2>
-          <p>Si tienes preguntas sobre esta política o la privacidad de Linterna FX, puedes contactar al desarrollador:</p>
-          <p><strong>Bryan Inostroza</strong><br><a href="mailto:bryan.inostroza.dev@gmail.com">bryan.inostroza.dev@gmail.com</a></p>
+        <section aria-labelledby="menores">
+          <h2 id="menores">11. Menores</h2>
+          <p>Linterna FX es una herramienta de utilidad general y no está diseñada específicamente como servicio infantil. Si un padre, madre o tutor tiene dudas sobre la privacidad de un menor al utilizar la aplicación, puede contactar al desarrollador mediante el correo indicado en esta política.</p>
+        </section>
+        <section aria-labelledby="seguridad">
+          <h2 id="seguridad">12. Seguridad</h2>
+          <p>Se procura minimizar los permisos y la recopilación de datos necesarios para las funciones de la aplicación. Los servicios publicitarios y de consentimiento pueden utilizar conexiones de red y tratar información según sus propias medidas de seguridad. Ninguna medida permite garantizar una seguridad absoluta.</p>
+        </section>
+        <section aria-labelledby="cambios">
+          <h2 id="cambios">13. Cambios a esta política</h2>
+          <p>Esta política puede actualizarse si cambian las funciones de Linterna FX, se incorporan proveedores o cambian los requisitos legales aplicables. Las actualizaciones se publicarán en esta página junto con la fecha de la última revisión.</p>
+        </section>
+        <section aria-labelledby="contacto-privacidad">
+          <h2 id="contacto-privacidad">14. Contacto</h2>
+          <p>Para consultas sobre esta política o la privacidad de Linterna FX, puedes contactar a Bryan Inostroza en <a href="mailto:bryan.inostroza.dev@gmail.com">bryan.inostroza.dev@gmail.com</a>.</p>
         </section>
       </article>
     </main>

@@ -31,31 +31,13 @@ body {
   overflow-wrap: anywhere;
 }
 
-h1,
-h2 {
-  line-height: 1.25;
-  font-weight: 650;
-}
-
-h1 {
+.directory h1 {
   margin: 0;
   font-size: clamp(1.8rem, 5vw, 2.5rem);
+  line-height: 1.25;
+  font-weight: 650;
   letter-spacing: -0.035em;
   text-wrap: balance;
-}
-
-h2 {
-  margin: 0 0 1rem;
-  font-size: 1.25rem;
-  letter-spacing: -0.015em;
-}
-
-p {
-  margin: 0 0 1rem;
-}
-
-p:last-child {
-  margin-bottom: 0;
 }
 
 a {
@@ -74,68 +56,6 @@ a:focus-visible {
   border-radius: 2px;
 }
 
-.policy-header {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.app-name {
-  margin-bottom: 0.75rem;
-  color: var(--accent);
-  font-size: 0.95rem;
-  font-weight: 650;
-}
-
-.updated {
-  margin-top: 1rem;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-.app-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
-  margin: 1.75rem 0 0;
-  font-size: 0.9rem;
-}
-
-.app-details div {
-  min-width: 0;
-}
-
-dt {
-  color: var(--muted);
-}
-
-dd {
-  margin: 0.15rem 0 0;
-  font-weight: 600;
-}
-
-code {
-  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
-  font-size: 0.95em;
-}
-
-section {
-  margin-top: 2.25rem;
-}
-
-ul {
-  margin: 0 0 1rem;
-  padding-left: 1.25rem;
-}
-
-li + li {
-  margin-top: 0.5rem;
-}
-
-.contact {
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
 .directory {
   margin-top: clamp(2rem, 12vh, 7rem);
 }
@@ -151,11 +71,6 @@ li + li {
 @media (max-width: 36rem) {
   .page {
     margin-block: 1rem;
-  }
-
-  .app-details {
-    flex-direction: column;
-    gap: 0.75rem;
   }
 }
 
@@ -174,5 +89,168 @@ li + li {
 
   h2 {
     break-after: avoid;
+  }
+}
+
+/* Fonts bundled locally with their OFL licenses in assets/fonts/. */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./assets/fonts/geist-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./assets/fonts/geist-mono-latin.woff2") format("woff2");
+}
+
+/* Static equivalent of the reference privacy layout and its dark theme. */
+.policy-site {
+  color-scheme: dark;
+  --background: #090b09;
+  --text: #eef2e7;
+  --muted: #9ca594;
+  --border: #2a3027;
+  --accent: #4183fa;
+  min-height: 100dvh;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Geist", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.policy-site ::selection {
+  background: rgb(185 232 74 / 0.28);
+  color: var(--text);
+}
+
+.policy-page {
+  width: 100%;
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: 3rem 1rem 4rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* Replace browser defaults and the directory's shared typography. */
+.policy-page :where(h1, h2, p, dl, dd, ul, section) {
+  margin: 0;
+}
+
+.policy-page header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.policy-page h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.policy-page header p {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.policy-page section + section {
+  margin-top: 2.5rem;
+}
+
+.policy-page h2 {
+  margin-bottom: 0.875rem;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.policy-page p + p,
+.policy-page ul {
+  margin-top: 1rem;
+}
+
+.policy-page ul {
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.policy-page li + li {
+  margin-top: 0.5rem;
+}
+
+.policy-page dl {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.policy-page dt {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.policy-page dd {
+  min-width: 0;
+  font-weight: 500;
+}
+
+.policy-page code {
+  font-family: "Geist Mono", ui-monospace, monospace;
+  font-size: 0.875em;
+}
+
+.policy-page a {
+  text-decoration: underline;
+  text-decoration-thickness: auto;
+}
+
+.policy-page a:hover {
+  color: var(--text);
+  text-decoration-thickness: auto;
+}
+
+.policy-page a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+@media (min-width: 640px) {
+  .policy-page {
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  .policy-page dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 2rem;
+  }
+}
+
+@media print {
+  .policy-site {
+    color-scheme: light;
+    --background: #ffffff;
+    --text: #000000;
+    --muted: #333333;
+    --border: #777777;
+    --accent: #254e78;
+    background: white;
+    color: black;
+  }
+
+  .policy-page {
+    max-width: none;
+    padding: 0;
   }
 }
