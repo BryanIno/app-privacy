@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Política de Privacidad — Carioca</title>
+    <meta name="description" content="Política de privacidad de la aplicación Carioca.">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body class="policy-site">
+    <main class="policy-page">
+      <article aria-labelledby="titulo-politica">
+        <header>
+          <h1 id="titulo-politica">Política de Privacidad de Carioca</h1>
+          <p>Última actualización: <time datetime="2026-10-04">4 de octubre de 2026</time></p>
+        </header>
+        <section aria-labelledby="identificacion">
+          <h2 id="identificacion">1. Identificación de la aplicación</h2>
+          <dl>
+            <div>
+              <dt>Nombre</dt>
+              <dd>Carioca</dd>
+            </div>
+            <div>
+              <dt>Plataforma</dt>
+              <dd>Android</dd>
+            </div>
+            <div>
+              <dt>Desarrollador</dt>
+              <dd>Bryan Inostroza</dd>
+            </div>
+            <div>
+              <dt>Alcance</dt>
+              <dd>Versión inicial (V1)</dd>
+            </div>
+          </dl>
+          <p>Esta política describe el tratamiento de información en Carioca, distinguiendo los datos que el juego maneja localmente en el dispositivo de los servicios externos de publicidad, consentimiento y, si se habilita, diagnóstico de errores.</p>
+        </section>
+        <section aria-labelledby="funcionamiento">
+          <h2 id="funcionamiento">2. Funcionamiento general</h2>
+          <p>Carioca es un juego de cartas para Android. En su versión actual permite jugar contra la computadora o compartir una partida en el mismo dispositivo.</p>
+          <p>El modo Online está deshabilitado en la versión de producción y figura como “Próximamente”. Actualmente no se ofrecen partidas en línea, perfiles remotos ni guardado de partidas en la nube.</p>
+        </section>
+        <section aria-labelledby="cuenta">
+          <h2 id="cuenta">3. Cuenta de usuario</h2>
+          <p>Carioca no requiere registro ni inicio de sesión y no permite crear una cuenta propia. Sus funciones no recopilan un correo electrónico para una cuenta, una contraseña ni un perfil remoto.</p>
+          <p>La cuenta de Google Play que puedas utilizar para descargar la aplicación es independiente y no constituye una cuenta de Carioca.</p>
+        </section>
+        <section aria-labelledby="datos-locales">
+          <h2 id="datos-locales">4. Datos locales del juego</h2>
+          <p>Para ofrecer sus funciones, Carioca maneja localmente en el dispositivo:</p>
+          <ul>
+            <li>Nombres de jugadores introducidos en el juego.</li>
+            <li>Configuraciones y presets de juego.</li>
+            <li>Manos y cartas de la partida.</li>
+            <li>Estado temporal de la partida.</li>
+            <li>Puntuaciones.</li>
+          </ul>
+          <p>Estos datos se utilizan para configurar y desarrollar las partidas. Las funciones actuales del juego no los envían a un backend propio ni los sincronizan con un perfil remoto o con un servicio de guardado en la nube.</p>
+        </section>
+        <section aria-labelledby="conexion">
+          <h2 id="conexion">5. Backend y conexión a Internet</h2>
+          <p>Los modos contra la computadora y en el mismo dispositivo no necesitan un backend propio para funcionar. La versión actual de producción no depende de un servidor propio para gestionar las partidas.</p>
+          <p>La aplicación puede utilizar Internet para cargar anuncios mediante Google AdMob, gestionar mensajes y opciones de privacidad mediante Google UMP y enviar informes de errores a Sentry únicamente si ese servicio está habilitado en producción. El funcionamiento local del juego no implica que esos servicios externos funcionen sin Internet.</p>
+        </section>
+        <section aria-labelledby="admob">
+          <h2 id="admob">6. Publicidad mediante Google AdMob</h2>
+          <p>Carioca utiliza Google AdMob / Google Mobile Ads para mostrar banners publicitarios. En su versión actual no utiliza anuncios intersticiales, anuncios recompensados ni anuncios de apertura de la aplicación (App Open).</p>
+          <p>Google puede recopilar y procesar información técnica y publicitaria mediante Google Mobile Ads SDK, de acuerdo con sus políticas, la versión del SDK, el consentimiento y la configuración aplicable. Esta información puede incluir:</p>
+          <ul>
+            <li>Dirección IP, que puede utilizarse para estimar una ubicación general.</li>
+            <li>Identificadores publicitarios o del dispositivo, cuando correspondan.</li>
+            <li>Interacciones con anuncios y con la aplicación.</li>
+            <li>Información de diagnóstico y rendimiento.</li>
+          </ul>
+          <p>Google puede tratar esta información para entregar y medir anuncios, realizar análisis y prevenir el fraude. Según la región, el consentimiento y la configuración, los anuncios pueden ser personalizados o no personalizados. Los anuncios no personalizados también pueden implicar tratamiento de información para su entrega, medición y prevención del fraude.</p>
+          <p>El tratamiento por Google es distinto del manejo local de datos del juego y no implica que Bryan Inostroza reciba directamente toda esa información identificable.</p>
+          <p>Puedes consultar la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a> y la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">información oficial sobre los datos tratados por Google Mobile Ads SDK</a>.</p>
+        </section>
+        <section aria-labelledby="consentimiento">
+          <h2 id="consentimiento">7. Consentimiento y opciones de privacidad</h2>
+          <p>Carioca integra Google User Messaging Platform (UMP). Este servicio puede gestionar mensajes de privacidad, opciones de privacidad y el estado de consentimiento relacionado con la publicidad.</p>
+          <p>La presentación de mensajes, la solicitud de consentimiento y las opciones para revisar o modificar preferencias dependen de la región, la configuración y los requisitos aplicables. Cuando corresponda, puedes gestionar tus preferencias mediante las opciones de privacidad disponibles en la aplicación.</p>
+          <p>Más información en la <a href="https://developers.google.com/admob/android/privacy">documentación oficial de Google UMP</a>.</p>
+        </section>
+        <section aria-labelledby="sentry">
+          <h2 id="sentry">8. Diagnóstico opcional mediante Sentry</h2>
+          <p>Carioca incluye una integración opcional con Sentry para el diagnóstico de errores. El envío de informes de errores durante el uso de la aplicación solo se habilita si la versión de producción tiene configurada la conexión a Sentry (DSN). La presencia de esta integración no significa por sí sola que exista una recopilación activa.</p>
+          <p>Si se habilita, Sentry puede recibir información técnica sobre errores, fallos, la versión de la aplicación y el entorno del dispositivo, según la configuración del servicio, para ayudar a detectar y corregir problemas.</p>
+          <p>Actualmente, la carga automática de archivos de depuración está deshabilitada, al igual que los mapas de código fuente (source maps). Esta configuración es independiente del envío de informes de errores durante el uso, cuya activación depende de la conexión configurada en producción.</p>
+          <p>Si este servicio está habilitado, su tratamiento de información está sujeto a la configuración aplicable y a la <a href="https://sentry.io/privacy/">Política de Privacidad de Sentry</a>.</p>
+        </section>
+        <section aria-labelledby="retencion">
+          <h2 id="retencion">9. Retención y eliminación</h2>
+          <p>Los datos locales del juego permanecen en el dispositivo según el funcionamiento de la aplicación. El estado temporal puede cambiar o descartarse durante las partidas; las configuraciones y otros datos almacenados se conservan según su uso y las opciones de almacenamiento del dispositivo.</p>
+          <p>Para gestionar o borrar el almacenamiento local, puedes utilizar las opciones de la aplicación y de Android que estén disponibles, como borrar los datos de la aplicación. Borrar esos datos puede restablecer las configuraciones y eliminar la información de juego almacenada localmente.</p>
+          <p>La conservación y eliminación de información tratada por Google y, si está habilitado, Sentry dependen de sus políticas y de la configuración de los servicios. Borrar datos locales no equivale a eliminar información que esos proveedores ya hayan tratado.</p>
+          <p>Carioca no tiene cuentas propias, por lo que no existe un proceso de eliminación de cuenta. Para consultas sobre conservación, eliminación o privacidad, puedes utilizar el contacto indicado al final de esta política.</p>
+        </section>
+        <section aria-labelledby="audiencia">
+          <h2 id="audiencia">10. Audiencia</h2>
+          <p>Carioca está destinada a un público general y no está diseñada específicamente como un servicio dirigido a niños.</p>
+          <p>Si un padre, madre o tutor tiene dudas sobre la privacidad de un menor al utilizar la aplicación, puede contactar al desarrollador mediante el correo indicado en esta política.</p>
+        </section>
+        <section aria-labelledby="seguridad">
+          <h2 id="seguridad">11. Seguridad</h2>
+          <p>Las funciones actuales del juego manejan sus datos localmente y no requieren cuentas ni una base de datos propia de perfiles remotos. Los servicios externos aplican sus propias medidas de seguridad conforme a sus políticas y configuración. Ninguna medida permite garantizar una seguridad absoluta.</p>
+        </section>
+        <section aria-labelledby="cambios">
+          <h2 id="cambios">12. Cambios y futuras funciones</h2>
+          <p>Esta política podrá actualizarse si cambian las funciones de Carioca o los servicios integrados. Si posteriormente se incorporan el modo Online, Google Play Games, cuentas, guardado en la nube, estadísticas o nuevos servicios, se revisará la política para describir el tratamiento de información correspondiente. Esas funciones no se describen como disponibles en la versión actual.</p>
+          <p>Las actualizaciones se publicarán en esta página junto con la fecha de la última revisión.</p>
+        </section>
+        <section aria-labelledby="contacto-privacidad">
+          <h2 id="contacto-privacidad">13. Contacto</h2>
+          <p>Para consultas sobre esta política o la privacidad de Carioca, puedes contactar a Bryan Inostroza en <a href="mailto:bryan.inostroza.dev@gmail.com">bryan.inostroza.dev@gmail.com</a>.</p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
