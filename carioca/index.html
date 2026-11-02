@@ -1,119 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Política de Privacidad — Carioca</title>
-    <meta name="description" content="Política de privacidad de la aplicación Carioca.">
-    <link rel="stylesheet" href="../styles.css">
+    <meta
+      name="description"
+      content="Política de privacidad de la aplicación Carioca."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="canonical"
+      href="https://bryanino.github.io/app-privacy/carioca/"
+    />
   </head>
   <body class="policy-site">
     <main class="policy-page">
       <article aria-labelledby="titulo-politica">
         <header>
           <h1 id="titulo-politica">Política de Privacidad de Carioca</h1>
-          <p>Última actualización: <time datetime="2026-10-04">4 de octubre de 2026</time></p>
+          <p>
+            Última actualización:
+            <time datetime="2026-11-02">2 de noviembre de 2026</time>
+          </p>
         </header>
         <section aria-labelledby="identificacion">
           <h2 id="identificacion">1. Identificación de la aplicación</h2>
-          <dl>
-            <div>
-              <dt>Nombre</dt>
-              <dd>Carioca</dd>
-            </div>
-            <div>
-              <dt>Plataforma</dt>
-              <dd>Android</dd>
-            </div>
-            <div>
-              <dt>Desarrollador</dt>
-              <dd>Bryan Inostroza</dd>
-            </div>
-            <div>
-              <dt>Alcance</dt>
-              <dd>Versión inicial (V1)</dd>
-            </div>
-          </dl>
-          <p>Esta política describe el tratamiento de información en Carioca, distinguiendo los datos que el juego maneja localmente en el dispositivo de los servicios externos de publicidad, consentimiento y, si se habilita, diagnóstico de errores.</p>
+          <p>
+            Carioca es desarrollada por Bryan Inostroza y figura en Google Play
+            bajo la marca BYKA Tech. Contacto de privacidad y soporte:
+            <a href="mailto:bryan.inostroza.dev@gmail.com"
+              >bryan.inostroza.dev@gmail.com</a
+            >, dirección publicada actualmente en Google Play y en la política
+            vigente.
+          </p>
+          <p>
+            Aplicación: Carioca para Android. Alcance: versión 1.2.0 con
+            multijugador Online, además de sus modos locales.
+          </p>
         </section>
         <section aria-labelledby="funcionamiento">
           <h2 id="funcionamiento">2. Funcionamiento general</h2>
-          <p>Carioca es un juego de cartas para Android. En su versión actual permite jugar contra la computadora o compartir una partida en el mismo dispositivo.</p>
-          <p>El modo Online está deshabilitado en la versión de producción y figura como “Próximamente”. Actualmente no se ofrecen partidas en línea, perfiles remotos ni guardado de partidas en la nube.</p>
+          <p>
+            El modo multijugador Online requiere Internet y utiliza el servidor
+            <strong>https://api-carioca.bryaninostroza.cl</strong>, mediante
+            conexiones cifradas HTTPS/WSS. Permite crear y unirse a salas,
+            sincronizar partidas y recuperar una sesión Online guardada. No hay
+            registro de cuentas, correo de acceso ni contraseña de cuenta. La
+            sesión temporal de una sala no es un perfil permanente ni una cuenta
+            de Google Play Games.
+          </p>
+          <p>
+            La aplicación puede intentar recuperar una sesión Online previa al
+            abrirse y conectarse a los servicios de anuncios aunque elijas jugar
+            localmente. Que una partida sea offline no significa que todos los
+            servicios de la aplicación estén desconectados.
+          </p>
         </section>
         <section aria-labelledby="cuenta">
-          <h2 id="cuenta">3. Cuenta de usuario</h2>
-          <p>Carioca no requiere registro ni inicio de sesión y no permite crear una cuenta propia. Sus funciones no recopilan un correo electrónico para una cuenta, una contraseña ni un perfil remoto.</p>
-          <p>La cuenta de Google Play que puedas utilizar para descargar la aplicación es independiente y no constituye una cuenta de Carioca.</p>
+          <h2 id="cuenta">3. Cuenta y sesiones</h2>
+          <p>
+            Carioca no requiere registro ni inicio de sesión ni crea cuentas
+            permanentes. Las sesiones temporales de una sala permiten
+            identificar al participante y recuperar su conexión. La contraseña
+            opcional de sala no es una contraseña de cuenta. La cuenta de Google
+            Play utilizada para descargar la aplicación es independiente.
+          </p>
         </section>
         <section aria-labelledby="datos-locales">
           <h2 id="datos-locales">4. Datos locales del juego</h2>
-          <p>Para ofrecer sus funciones, Carioca maneja localmente en el dispositivo:</p>
-          <ul>
-            <li>Nombres de jugadores introducidos en el juego.</li>
-            <li>Configuraciones y presets de juego.</li>
-            <li>Manos y cartas de la partida.</li>
-            <li>Estado temporal de la partida.</li>
-            <li>Puntuaciones.</li>
-          </ul>
-          <p>Estos datos se utilizan para configurar y desarrollar las partidas. Las funciones actuales del juego no los envían a un backend propio ni los sincronizan con un perfil remoto o con un servicio de guardado en la nube.</p>
+          <p>
+            Puedes jugar contra bots o con otras personas en el mismo
+            dispositivo sin que esas partidas necesiten el servidor de Carioca.
+            Las reglas, cartas, jugadas y puntuaciones de esos modos se procesan
+            localmente. La app conserva preferencias, idioma, presets y progreso
+            de desbloqueo en el almacenamiento local de Android.
+          </p>
         </section>
         <section aria-labelledby="conexion">
-          <h2 id="conexion">5. Backend y conexión a Internet</h2>
-          <p>Los modos contra la computadora y en el mismo dispositivo no necesitan un backend propio para funcionar. La versión actual de producción no depende de un servidor propio para gestionar las partidas.</p>
-          <p>La aplicación puede utilizar Internet para cargar anuncios mediante Google AdMob, gestionar mensajes y opciones de privacidad mediante Google UMP y enviar informes de errores a Sentry únicamente si ese servicio está habilitado en producción. El funcionamiento local del juego no implica que esos servicios externos funcionen sin Internet.</p>
+          <h2 id="conexion">5. Multijugador y persistencia</h2>
+          <p>Para operar las salas y partidas se transmiten y procesan:</p>
+          <ul>
+            <li>
+              El nombre o apodo que introduces y los nombres de sala. Elige un
+              apodo que no revele información que no quieras compartir con los
+              participantes.
+            </li>
+            <li>
+              Identificadores de jugador, sala y partida; código de sala;
+              conexión y desconexión; fechas de creación, actividad y
+              finalización; turnos y revisiones del estado.
+            </li>
+            <li>
+              Reglas de la sala, participantes, reparto y manos, mazo y
+              descarte, combinaciones, acciones, historial de rondas y
+              puntuaciones necesarios para validar y sincronizar la partida.
+            </li>
+            <li>
+              Credenciales temporales de reconexión y confirmaciones de
+              acciones, para recuperar tu sesión y evitar movimientos
+              duplicados. El dispositivo guarda el código y el token de
+              reconexión en AsyncStorage, además del apodo Online y, cuando
+              corresponde, una acción pendiente. No se ofrece un almacén de
+              credenciales cifrado adicional a la protección de datos de
+              Android.
+            </li>
+            <li>
+              Si una sala tiene contraseña, esta se transmite al servidor para
+              comprobar el acceso; el servidor conserva un verificador derivado
+              con salt, no la contraseña original. No es una contraseña de
+              cuenta.
+            </li>
+          </ul>
+          <p>
+            El servidor persiste instantáneas de salas y partidas y
+            confirmaciones de acciones en PostgreSQL. Las instantáneas incluyen
+            identificadores, apodos, reglas, estado completo de la partida y
+            hashes de los tokens de reconexión; no guardan los tokens originales
+            ni identificadores de socket. Estos datos son seudónimos y
+            <strong>no se garantiza anonimato</strong>.
+          </p>
+          <p>
+            Los demás participantes reciben los nombres visibles y el estado
+            público necesario para jugar: turno, conteos, descarte, juegos en la
+            mesa y puntuación. Cada jugador recibe su propia mano; la proyección
+            enviada a rivales no incluye el contenido de tu mano ni el orden
+            privado del mazo. El servidor sí procesa el estado completo para
+            validar el juego.
+          </p>
+        </section>
+        <section aria-labelledby="direccion-ip">
+          <h2 id="direccion-ip">6. Dirección IP y registros técnicos</h2>
+          <p>
+            El servidor y la infraestructura que recibe la conexión tienen
+            acceso a la dirección IP. El código utiliza la dirección resuelta de
+            la conexión para límites de conexiones, creación de salas e intentos
+            de acceso, con fines de seguridad y prevención de abuso. Los
+            contadores de límites se mantienen en memoria. No se usa la IP para
+            geolocalizar jugadores en la lógica propia del juego.
+          </p>
+          <p>
+            El código de la API registra eventos técnicos de conexión,
+            reconexión, salida, inicio y revisiones de jugadas, errores y
+            métricas operativas agregadas. No incorpora deliberadamente nombres,
+            manos, contraseñas ni tokens en esos mensajes. Esto no acredita que
+            los registros del proxy, alojamiento, base de datos u otros
+            proveedores excluyan IP u otros metadatos. La configuración de esa
+            infraestructura y su conservación deben distinguirse del
+            almacenamiento de las salas.
+          </p>
+        </section>
+        <section aria-labelledby="finalidades">
+          <h2 id="finalidades">7. Finalidades y destinatarios</h2>
+          <p>
+            Los datos Online se utilizan para ofrecer las partidas, comprobar
+            acceso y reglas, sincronizar jugadores, recuperar sesiones, prevenir
+            duplicados y proteger el servicio. Los participantes de tu sala
+            reciben la información pública descrita. El operador del servidor y
+            los proveedores de infraestructura tratan los datos necesarios para
+            alojar y operar el servicio. No se envían deliberadamente apodos,
+            manos o puntuaciones como parámetros personalizados de los anuncios.
+          </p>
+          <p>
+            La app no incluye chat, mensajería, pagos ni apuestas con dinero
+            real. Los nombres visibles y las reglas elegidas para una sala se
+            comunican a sus participantes.
+          </p>
         </section>
         <section aria-labelledby="admob">
-          <h2 id="admob">6. Publicidad mediante Google AdMob</h2>
-          <p>Carioca utiliza Google AdMob / Google Mobile Ads para mostrar banners publicitarios. En su versión actual no utiliza anuncios intersticiales, anuncios recompensados ni anuncios de apertura de la aplicación (App Open).</p>
-          <p>Google puede recopilar y procesar información técnica y publicitaria mediante Google Mobile Ads SDK, de acuerdo con sus políticas, la versión del SDK, el consentimiento y la configuración aplicable. Esta información puede incluir:</p>
-          <ul>
-            <li>Dirección IP, que puede utilizarse para estimar una ubicación general.</li>
-            <li>Identificadores publicitarios o del dispositivo, cuando correspondan.</li>
-            <li>Interacciones con anuncios y con la aplicación.</li>
-            <li>Información de diagnóstico y rendimiento.</li>
-          </ul>
-          <p>Google puede tratar esta información para entregar y medir anuncios, realizar análisis y prevenir el fraude. Según la región, el consentimiento y la configuración, los anuncios pueden ser personalizados o no personalizados. Los anuncios no personalizados también pueden implicar tratamiento de información para su entrega, medición y prevención del fraude.</p>
-          <p>El tratamiento por Google es distinto del manejo local de datos del juego y no implica que Bryan Inostroza reciba directamente toda esa información identificable.</p>
-          <p>Puedes consultar la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a> y la <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">información oficial sobre los datos tratados por Google Mobile Ads SDK</a>.</p>
+          <h2 id="admob">8. Publicidad mediante Google AdMob</h2>
+          <p>
+            Carioca muestra un banner mediante Google AdMob / Google Mobile Ads.
+            Según el SDK, consentimiento, región y configuración, Google procesa
+            dirección IP, información que permite estimar ubicación general,
+            identificadores publicitarios o del dispositivo, interacciones y
+            datos de diagnóstico y rendimiento para entregar y medir anuncios,
+            realizar análisis y prevenir fraude. Los anuncios no personalizados
+            también pueden implicar tratamiento de datos. Consulta la
+            <a href="https://policies.google.com/privacy">política de Google</a>
+            y la
+            <a
+              href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
+              >declaración de datos de Mobile Ads</a
+            >.
+          </p>
         </section>
         <section aria-labelledby="consentimiento">
-          <h2 id="consentimiento">7. Consentimiento y opciones de privacidad</h2>
-          <p>Carioca integra Google User Messaging Platform (UMP). Este servicio puede gestionar mensajes de privacidad, opciones de privacidad y el estado de consentimiento relacionado con la publicidad.</p>
-          <p>La presentación de mensajes, la solicitud de consentimiento y las opciones para revisar o modificar preferencias dependen de la región, la configuración y los requisitos aplicables. Cuando corresponda, puedes gestionar tus preferencias mediante las opciones de privacidad disponibles en la aplicación.</p>
-          <p>Más información en la <a href="https://developers.google.com/admob/android/privacy">documentación oficial de Google UMP</a>.</p>
+          <h2 id="consentimiento">
+            9. Consentimiento y opciones de privacidad
+          </h2>
+          <p>
+            Google User Messaging Platform (UMP) gestiona las preferencias
+            publicitarias. La app consulta su estado antes de inicializar Mobile
+            Ads y solicitar anuncios, y solo lo hace cuando UMP informa que
+            puede solicitarlos. Cuando UMP requiere un punto de acceso, en
+            Inicio aparece <strong>Opciones de privacidad</strong> para abrir su
+            formulario. La presentación concreta de mensajes depende de lo
+            configurado en AdMob y de los requisitos aplicables. El enlace
+            <strong>Política de privacidad</strong> está disponible por separado
+            en Inicio y no sustituye al formulario de consentimiento. Consulta
+            <a href="https://developers.google.com/admob/android/privacy">UMP</a
+            >.
+          </p>
         </section>
         <section aria-labelledby="sentry">
-          <h2 id="sentry">8. Diagnóstico opcional mediante Sentry</h2>
-          <p>Carioca incluye una integración opcional con Sentry para el diagnóstico de errores. El envío de informes de errores durante el uso de la aplicación solo se habilita si la versión de producción tiene configurada la conexión a Sentry (DSN). La presencia de esta integración no significa por sí sola que exista una recopilación activa.</p>
-          <p>Si se habilita, Sentry puede recibir información técnica sobre errores, fallos, la versión de la aplicación y el entorno del dispositivo, según la configuración del servicio, para ayudar a detectar y corregir problemas.</p>
-          <p>Actualmente, la carga automática de archivos de depuración está deshabilitada, al igual que los mapas de código fuente (source maps). Esta configuración es independiente del envío de informes de errores durante el uso, cuya activación depende de la conexión configurada en producción.</p>
-          <p>Si este servicio está habilitado, su tratamiento de información está sujeto a la configuración aplicable y a la <a href="https://sentry.io/privacy/">Política de Privacidad de Sentry</a>.</p>
+          <h2 id="sentry">10. Analítica y diagnóstico opcional</h2>
+          <p>
+            La capa propia de eventos de producto no tiene un proveedor de
+            analítica conectado. Esto no excluye la medición de Google Mobile
+            Ads ni los registros de operación del servidor.
+          </p>
+          <p>
+            Carioca incluye una integración opcional con Sentry para diagnóstico
+            de errores. Su envío de informes solo se activa si la aplicación
+            productiva incorpora la configuración de conexión al servicio (DSN);
+            la presencia del SDK no implica que esté enviando informes. Si se
+            habilita, puede recibir errores, trazas y datos técnicos de la
+            aplicación y del dispositivo. La configuración filtra usuario,
+            petición, contexto adicional y breadcrumbs y desactiva las trazas de
+            rendimiento; esas medidas no garantizan ausencia absoluta de datos
+            personales. El tratamiento depende de la activación y configuración
+            efectiva del servicio y de la
+            <a href="https://sentry.io/privacy/">política de Sentry</a>.
+          </p>
         </section>
         <section aria-labelledby="retencion">
-          <h2 id="retencion">9. Retención y eliminación</h2>
-          <p>Los datos locales del juego permanecen en el dispositivo según el funcionamiento de la aplicación. El estado temporal puede cambiar o descartarse durante las partidas; las configuraciones y otros datos almacenados se conservan según su uso y las opciones de almacenamiento del dispositivo.</p>
-          <p>Para gestionar o borrar el almacenamiento local, puedes utilizar las opciones de la aplicación y de Android que estén disponibles, como borrar los datos de la aplicación. Borrar esos datos puede restablecer las configuraciones y eliminar la información de juego almacenada localmente.</p>
-          <p>La conservación y eliminación de información tratada por Google y, si está habilitado, Sentry dependen de sus políticas y de la configuración de los servicios. Borrar datos locales no equivale a eliminar información que esos proveedores ya hayan tratado.</p>
-          <p>Carioca no tiene cuentas propias, por lo que no existe un proceso de eliminación de cuenta. Para consultas sobre conservación, eliminación o privacidad, puedes utilizar el contacto indicado al final de esta política.</p>
+          <h2 id="retencion">11. Conservación y eliminación</h2>
+          <p>
+            Los datos locales persistentes permanecen según el uso de la app
+            hasta que se sustituyan, se eliminen mediante los controles
+            disponibles o se borre su almacenamiento desde Android. Borrar el
+            almacenamiento restablece preferencias y progreso y elimina la copia
+            local de la sesión;
+            <strong
+              >no equivale a abandonar ni a borrar una sala del servidor</strong
+            >. Android tiene desactivada la copia de seguridad de datos de la
+            app.
+          </p>
+          <p>
+            Las salas Online tienen un ciclo de vida configurable. Al finalizar
+            o abandonarse pueden conservarse temporalmente para comunicar el
+            resultado y permitir la recuperación correspondiente; el servicio
+            elimina las salas que cumplen sus criterios de caducidad. La
+            eliminación de una sala en PostgreSQL elimina también sus
+            confirmaciones de acciones asociadas. No hay un historial personal
+            remoto permanente accesible desde la app ni un botón de eliminación
+            inmediata de datos remotos.
+          </p>
+          <p>
+            Cerrar el menú o la app no constituye abandono definitivo.
+            <strong>Abandonar partida</strong> usa el flujo del servidor: puede
+            cancelar una partida para todos y no garantiza el borrado inmediato
+            de todos los datos. La duración de una ventana de reconexión no es
+            un plazo de eliminación de datos.
+          </p>
+          <p>
+            Las caducidades de las salas son configurables; sus valores de
+            referencia no constituyen un plazo universal para registros técnicos
+            o copias de seguridad. La aplicación no ofrece un plazo fijo de
+            eliminación de esos registros y backups ni permite borrarlos desde
+            sus controles. Para consultar su conservación y tratamiento, utiliza
+            el contacto de privacidad. Google y, si está habilitado, Sentry
+            administran la conservación de sus servicios conforme a sus
+            políticas y configuración. No se garantiza eliminación inmediata.
+          </p>
         </section>
         <section aria-labelledby="audiencia">
-          <h2 id="audiencia">10. Audiencia</h2>
-          <p>Carioca está destinada a un público general y no está diseñada específicamente como un servicio dirigido a niños.</p>
-          <p>Si un padre, madre o tutor tiene dudas sobre la privacidad de un menor al utilizar la aplicación, puede contactar al desarrollador mediante el correo indicado en esta política.</p>
+          <h2 id="audiencia">12. Audiencia</h2>
+          <p>
+            Carioca es un juego de cartas social para público general, sin
+            apuestas ni premios monetarios. Incluye publicidad y no tiene un
+            flujo específico de verificación de edad. Si un padre, madre o tutor
+            tiene dudas sobre la privacidad de un menor que utilice la
+            aplicación, puede contactar al desarrollador mediante el correo
+            indicado.
+          </p>
         </section>
         <section aria-labelledby="seguridad">
-          <h2 id="seguridad">11. Seguridad</h2>
-          <p>Las funciones actuales del juego manejan sus datos localmente y no requieren cuentas ni una base de datos propia de perfiles remotos. Los servicios externos aplican sus propias medidas de seguridad conforme a sus políticas y configuración. Ninguna medida permite garantizar una seguridad absoluta.</p>
+          <h2 id="seguridad">13. Seguridad</h2>
+          <p>
+            La conexión pública con el servidor de Carioca utiliza HTTPS/WSS. El
+            servidor procesa el estado completo para validar y sincronizar las
+            partidas; no es un sistema de cifrado de extremo a extremo entre
+            jugadores. Los proveedores externos aplican sus medidas de seguridad
+            conforme a sus políticas y configuración. No se garantiza seguridad
+            absoluta ni cifrado adicional del almacenamiento local o de las
+            copias de seguridad.
+          </p>
         </section>
         <section aria-labelledby="cambios">
-          <h2 id="cambios">12. Cambios y futuras funciones</h2>
-          <p>Esta política podrá actualizarse si cambian las funciones de Carioca o los servicios integrados. Si posteriormente se incorporan el modo Online, Google Play Games, cuentas, guardado en la nube, estadísticas o nuevos servicios, se revisará la política para describir el tratamiento de información correspondiente. Esas funciones no se describen como disponibles en la versión actual.</p>
-          <p>Las actualizaciones se publicarán en esta página junto con la fecha de la última revisión.</p>
+          <h2 id="cambios">14. Cambios en esta política</h2>
+          <p>
+            Esta política se revisará si cambia el tratamiento de datos, los
+            proveedores o las funciones disponibles. Las actualizaciones se
+            publicarán en esta misma URL, con su fecha de revisión.
+          </p>
         </section>
         <section aria-labelledby="contacto-privacidad">
-          <h2 id="contacto-privacidad">13. Contacto</h2>
-          <p>Para consultas sobre esta política o la privacidad de Carioca, puedes contactar a Bryan Inostroza en <a href="mailto:bryan.inostroza.dev@gmail.com">bryan.inostroza.dev@gmail.com</a>.</p>
+          <h2 id="contacto-privacidad">15. Solicitudes y contacto</h2>
+          <p>
+            Para consultas, acceso, rectificación o eliminación cuando
+            correspondan según la normativa aplicable, escribe a
+            <a href="mailto:bryan.inostroza.dev@gmail.com"
+              >bryan.inostroza.dev@gmail.com</a
+            >. Puedes indicar el apodo, código de sala y fecha aproximada para
+            ayudar a localizar una sesión;
+            <strong>no envíes tokens de reconexión ni contraseñas</strong>. No
+            se promete que todos los datos puedan asociarse a una persona ni que
+            sigan disponibles si la sala ya caducó. No existe un formulario o
+            endpoint automático de eliminación; el contacto por correo no
+            acredita un proceso de borrado automatizado ni plazos de respuesta
+            garantizados. Las solicitudes sobre datos de Google están también
+            sujetas a sus mecanismos y políticas.
+          </p>
         </section>
       </article>
     </main>
