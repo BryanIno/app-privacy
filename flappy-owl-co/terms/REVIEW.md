@@ -1,5 +1,11 @@
 # Flappy Owl & Co: alcance y revisión de los términos
 
+Actualización del 9 de noviembre de 2026: se añaden las políticas web en los tres
+idiomas y sus enlaces desde los Términos; también se corrige el aviso del juego.
+Los puntos 4 y 5 de los pendientes originales quedan atendidos. Véase
+[la auditoría de privacidad](../privacy/REVIEW.md). El resto de este registro
+describe la revisión original del 8 de noviembre.
+
 Fecha: 8 de noviembre de 2026. Documento de mantenimiento para el desarrollador;
 no forma parte de las condiciones dirigidas al jugador ni acredita revisión por abogado.
 
