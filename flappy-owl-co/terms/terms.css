@@ -1,0 +1,120 @@
+/* Navigation additions for these terms only; visual tokens come from styles.css. */
+.terms-document {
+  color-scheme: dark;
+  background: #090b09;
+}
+
+.terms-site .skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  transform: translateY(-200%);
+}
+
+.terms-site .skip-link:focus {
+  transform: translateY(0);
+}
+
+.terms-site .policy-page {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+.terms-site .language-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.terms-site .language-nav li + li {
+  margin-top: 0;
+}
+
+.terms-site .language-nav a,
+.terms-site .terms-footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-block: 0.25rem;
+}
+
+.terms-site .language-nav [aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration-thickness: 0.15em;
+}
+
+.terms-site .terms-contents {
+  margin-bottom: 2.5rem;
+}
+
+.terms-site summary {
+  min-height: 2.75rem;
+  padding-block: 0.5rem;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.terms-site summary:hover {
+  color: var(--text);
+}
+
+.terms-site summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.terms-site .terms-contents ol {
+  margin-block: 0.5rem 0;
+  padding-left: 1.75rem;
+}
+
+.terms-site .terms-contents a {
+  display: inline-block;
+  padding-block: 0.25rem;
+}
+
+.terms-site :where(h2, #inicio, #contenido) {
+  scroll-margin-top: 1.5rem;
+}
+
+.terms-site .terms-footer {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.terms-site .terms-footer p {
+  color: var(--muted);
+}
+
+.terms-site .terms-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .terms-site .policy-page {
+    padding-inline: max(1.5rem, env(safe-area-inset-left)) max(1.5rem, env(safe-area-inset-right));
+  }
+}
+
+@media print {
+  .terms-document {
+    color-scheme: light;
+    background: white;
+  }
+
+  .terms-site :where(.skip-link, .language-nav, .terms-contents, .terms-footer nav) {
+    display: none;
+  }
+}
